@@ -26,6 +26,8 @@ Here, we compare the MFCCs of two different audio tracks. The MFCCs provide insi
 ## Dataset Used
 For this project, the GTZAN dataset is used, which contains 1000 audio tracks, each 30 seconds long, and divided into 10 different music genres. The dataset is widely used for music classification tasks.
 
+More details here: [GTZAN Dataset](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification/data)
+
 - **Genres:** Blues, Classical, Country, Disco, Hiphop, Jazz, Metal, Pop, Reggae, Rock
 - **Audio Format:** WAV
 - **Duration per track:** 30 seconds
