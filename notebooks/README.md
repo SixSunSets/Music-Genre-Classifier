@@ -6,7 +6,7 @@
 3. [Dataset Used](#dataset-used)
 4. [Model Selection and Comparison](#model-selection-and-comparison)
 5. [Results and Evaluation](#results-and-evaluation)
-6. [Requirements](#requirements)
+6. [Prerequisitess](#prerequisites)
 
 
 ## Overview
