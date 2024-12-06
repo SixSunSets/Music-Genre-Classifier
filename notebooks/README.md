@@ -1,4 +1,4 @@
-# Music Genre Classifier using Machine Learning
+# Music Genre Classifier with Machine Learning
 
 ## Table of Contents
 1. [Overview](#overview)
