@@ -3,10 +3,10 @@
 ## Table of Contents
 1. [Overview](#overview)
 2. [MFCCs: Mel-Frequency Cepstral Coefficients](#mfccs-mel-frequency-cepstral-coefficients)
-3. [Dataset Used](#dataset-used)
-4. [Model Selection and Comparison](#model-selection-and-comparison)
-5. [Results and Evaluation](#results-and-evaluation)
-6. [Prerequisitess](#prerequisites)
+3. [Data Preprocessing](#data-preprocessing)
+5. [Model Selection and Comparison](#model-selection-and-comparison)
+6. [Results and Evaluation](#results-and-evaluation)
+7. [Prerequisitess](#prerequisites)
 
 
 ## Overview
@@ -23,20 +23,20 @@ Here, we compare the MFCCs of two different audio tracks. The MFCCs provide insi
   <img src="https://github.com/user-attachments/assets/5175e1a8-a890-40f0-9010-8e8057b745b1" width="750"/>
 </p>
 
-## Dataset Used
+## Data Preprocessing
+
+### Dataset used
 For this project, the GTZAN dataset is used, which contains 1000 audio tracks, each 30 seconds long, and divided into 10 different music genres. The dataset is widely used for music classification tasks.
 
 More details here: [GTZAN Dataset](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification/data)
 
 - **Genres:** Blues, Classical, Country, Disco, Hiphop, Jazz, Metal, Pop, Reggae, Rock
-- **Audio Format:** WAV
-- **Duration per track:** 30 seconds
-- **Sampling Rate:** 22,050 Hz
-
+  
 <p align="center">
   <img src="https://github.com/user-attachments/assets/aab54d0c-8bd3-43e0-a914-526f6c1a40bb" width="750"/>
 </p>
 
+Dentro de la carpeta ```genres_original``` del dataset usado encontramos 1000 pistas de audio en formato WAV, con una duración de 30 segundos cada una, divididas en 10 diferentes géneros musicales. 
 
 ## Model Selection and Comparison
 Several ML models are evaluated for the task, including:
