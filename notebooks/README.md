@@ -119,6 +119,69 @@ The following table shows the results of an initial test for Random Forest, XGBo
 
 It should be noted that these results correspond to an initial test using default parameters. In the next phase, hyperparameter tuning will be performed, which could significantly improve the performance of the models, especially for K-Nearest Neighbors, which is sensitive to the hyperparameter settings.
 
+### Hyperparameter tuning
+GridSearchCV was used to perform hyperparameter fitting on each of the models. Using a dictionary, we defined a parameter space, evaluated multiple combinations and selected those that maximized model accuracy.
+
+#### Random Forest (270 fits)
+- ``n_estimators``: number of trees in the forest (50, 100, 200).
+- ``max_depth``: maximum depth of each tree (10, 20, 30).
+- ``min_samples_split``: minimum number of samples required to split a node (2, 5, 10).
+- ``criterion``: division criterion (gini or entropy).
+
+#### XGBoost (540 fits)
+- ``n_estimators``: number of trees (50, 100, 200).
+- ``max_depth``: maximum depth of the trees (3, 6, 10).
+- ``learning_rate``: learning rate (0.01, 0.1, 0.3).
+- ``subsample``: proportion of samples to use (0.8, 1.0).
+- ``colsample_bytree``: ratio of columns to use per tree (0.8, 1.0).
+
+#### KNN (80 fits)
+- ``n_neighbors``: number of neighbors (3, 5, 7, 10).
+- ``weights``: type of neighbor weighting ('uniform' or 'distance').
+- ``metric``: type of distance metric ('euclidean' or 'manhattan').
+
+### Confussion matrices for "best" models
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/50b395c0-c460-4b4b-a1f6-c036f9eed255" width="500"/>
+</p>
+
+- Best hyperparameters for Random Forest: {'criterion': 'entropy', 'max_depth': 20, 'min_samples_split': 2, 'n_estimators': 200}
+- Accuracy in test set: 0.8106904231625836
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/126c3f5e-45f0-4784-9c35-821252456700" width="500"/>
+</p>
+
+- Best hyperparameters for XGBoost: {'colsample_bytree': 0.8, 'learning_rate': 0.1, 'max_depth': 10, 'n_estimators': 200, 'subsample': 0.8}
+- Accuracy in test set: 0.7906458797327395
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4d0092f8-923e-4699-ac50-a98c44304acb" width="500"/>
+</p>
+
+- Best hyperparameters for KNN: {'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}
+- Accuracy in test set: 0.8596881959910914
+
+#### Conclusions
+
+- KNN: 85.97%
+
+    - It is the model with the highest accuracy, indicating that, with current features, the proximity between points in feature space is effective in correctly classifying most genres.
+    - Looking at the confusion matrix, some confusion is noted in classes such as “rock” and “reggae”.
+
+- Random Forest: 81.07%
+
+    - Although it does not surpass KNN in accuracy, it performs quite well.
+    - It has a more balanced performance across classes and seems to handle classes with less homogeneity or overlap better.
+    - For example, although it does not have the highest accuracy, it handles classes such as “jazz” and “reggae” well compared to KNN.
+
+- XGBoost: 79.06%
+
+    - It has the lowest accuracy among the three, although it is still competitive.
+    - It shows more confusion in certain classes (“hiphop”, “rock”, “country”) than the other two models, despite being a sophisticated algorithm.
+    - In this specific case, seems less effective than Random Forest and KNN.
+    
 ---
 
 ## Prerequisites
