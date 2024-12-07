@@ -32,7 +32,7 @@ More details here: [GTZAN Dataset](https://www.kaggle.com/datasets/andradaoltean
 </p>
 
 ## The key features: MFCCs 
-Mel Frequency cepstral coefficients are used to extract relevant features from audio signals based on the way humans perceive frequencies. In music genre analysis, MFCCs help to identify patterns in timbre and sound texture that vary by genre.
+Mel Frequency cepstral coefficients are used to extract relevant features from audio signals based on the way humans perceive frequencies [1]. In music genre analysis, MFCCs help to identify patterns in timbre and sound texture that vary by genre.
 
 Here, we compare the MFCCs of two different audio tracks. The MFCCs provide insights into the differences in spectral content between the tracks, which are crucial for genre classification.
 
@@ -65,4 +65,7 @@ Python packages necessary specified in requirements.txt run:
 ```
 pip install -r requirements.txt
 ```
+## References
+
+[1] Muda, L., Begam, M., & Elamvazuthi, I. (2010). Voice recognition algorithms using Mel Frequency Cepstral Coefficient (MFCC) and Dynamic Time Warping (DTW) techniques. Journal of Computing, 2(3), 138-143. Retrieved from https://arxiv.org/pdf/1003.4083
 
