@@ -36,7 +36,7 @@ More details here: [GTZAN Dataset](https://www.kaggle.com/datasets/andradaoltean
 Each 30-second audio track from the GTZAN dataset was segmented into 10-second intervals, tripling the dataset size. The features (MFCCs) extracted from each segment were used as input for training machine learning models. 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/aab54d0c-8bd3-43e0-a914-526f6c1a40bb" width="750"/>
+  <img src="https://github.com/user-attachments/assets/2a005970-5b98-45ad-b443-1f8929fe47be" width="750"/>
 </p>
 
 ---
@@ -50,7 +50,11 @@ Mel Frequency cepstral coefficients are used to extract relevant features from a
 Here, we compare the MFCCs of two different audio tracks. The MFCCs provide insights into the differences in spectral content between the tracks, which are crucial for genre classification.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5175e1a8-a890-40f0-9010-8e8057b745b1" width="750"/>
+  <img src="https://github.com/user-attachments/assets/a466b966-0b03-49fb-ac2d-bce3fbd00616" width="750"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6e684c49-b185-4d56-b6a1-27ff76da34f1" width="750"/>
 </p>
 
 The MFCCs were extracted using the following parameters:
