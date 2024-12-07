@@ -16,10 +16,13 @@
 ## Overview
 This notebook is use to extract features from audio files and use them to train various ML models. One of the most effective features for audio classification is the Mel-frequency Cepstral Coefficients (MFCCs), which represent the spectral characteristics of the audio signal.
 
+
 ## Flow chart
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1b2828bf-eb22-48b7-a0c2-2e39338a7163" width="750"/>
 </p>
+
+---
 
 ## Data Preprocessing
 
@@ -35,6 +38,8 @@ Each 30-second audio track from the GTZAN dataset was segmented into 10-second i
 <p align="center">
   <img src="https://github.com/user-attachments/assets/aab54d0c-8bd3-43e0-a914-526f6c1a40bb" width="750"/>
 </p>
+
+---
 
 ## Feature Extraction
 The Mel-Frequency Cepstral Coefficients (MFCCs) were computed for each audio segment. These features summarize the spectral properties of the audio and help the classifier distinguish between genres.
@@ -57,6 +62,8 @@ Below is the code used to extract the MFCCs:
 ```python
 mfcc = librosa.feature.mfcc(y=audio_segment, sr=sample_rate, n_mfcc=20)
 ```
+---
+
 ## Selection of segmentation algorithm
 
 Steps in Data Preparation:
@@ -65,6 +72,8 @@ Steps in Data Preparation:
 - Encode Genre Labels: Music genres were converted into numerical values using a LabelEncoder.
 - Scale Features: StandardScaler was applied to standardize the feature distribution, improving model performance.
 - Split Dataset: The data was divided into training (85%) and testing (15%) sets while preserving the class distribution.
+
+---
 
 ## Model Training
 Three distinct machine learning algorithms were implemented and evaluated for the task of music genre classification: Random Forest, XGBoost, and K-Nearest Neighbors (KNN). Each model was trained on the segmented and preprocessed dataset, with a portion held out for testing.
@@ -77,27 +86,40 @@ Three distinct machine learning algorithms were implemented and evaluated for th
 
 The confusion matrices for each model visually depict the predictions versus the true labels, providing insights into model strengths and weaknesses.
 
+---
+
 ## Validation and Fine-Tuning
-
-### Model Comparison
-
-| **Algorithm**      | **Precision** | **Recall** | **F1-score** | **Accuracy** |
-|---------------------|---------------|------------|--------------|--------------|
-| Random Forest       | 0.78          | 0.77       | 0.77         | 0.78         |
-| XGBoost             | 0.79          | 0.79       | 0.79         | 0.79         |
-| K-Nearest Neighbors | 0.73          | 0.72       | 0.72         | 0.72         |
 
 ### Confussion matrix for each model
 
+The following confusion matrices illustrate the performance of each model in classifying musical genres in the test set. The cells show the number of examples correctly or incorrectly classified for each musical genre.
+
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/88a3cd0b-b1d5-476d-8b43-595bcc80b7c7" width="500"/>
+  <img src="https://github.com/user-attachments/assets/6aff6aba-6500-428c-a3c2-dc33cc72931a" width="500"/>
 </p>
+
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1f082cdf-d22b-4d83-b627-122aeec534ca" width="500"/>
+  <img src="https://github.com/user-attachments/assets/e1d528f0-2f46-4560-ab3b-fd216b3af04f" width="500"/>
 </p>
+
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5ab9ded1-60fd-416a-9544-fbc52d25cb91" width="500"/>
+  <img src="https://github.com/user-attachments/assets/08bab2c0-03e5-4c29-aec6-86c88535717b" width="500"/>
 </p>
+As can be seen in the confusion matrices, Random Forest has a more balanced classification across genres, while XGBoost and KNN have more errors in genres such as Rock and Disco. Although Random Forest is the most accurate in this initial test, there may be room for improvement in all models with proper parameter tuning.
+
+### Model Comparison
+
+The following table shows the results of an initial test for Random Forest, XGBoost and K-Nearest Neighbors on the test data set. The metrics evaluated include Accuracy, Recall, F1-score and Accuracy.
+
+| **Algorithm**      | **Precision** | **Recall** | **F1-score** | **Accuracy** |
+|---------------------|---------------|------------|--------------|--------------|
+| Random Forest       | 0.79          | 0.78       | 0.78         | 0.78         |
+| XGBoost             | 0.75          | 0.75       | 0.75         | 0.75         |
+| K-Nearest Neighbors | 0.75          | 0.74       | 0.74         | 0.74         |
+
+It should be noted that these results correspond to an initial test using default parameters. In the next phase, hyperparameter tuning will be performed, which could significantly improve the performance of the models, especially for K-Nearest Neighbors, which is sensitive to the hyperparameter settings.
+
+---
 
 ## Prerequisites
 Create a virtual environment if desired, then to install the necessary Python packages specified in requirements.txt run:
