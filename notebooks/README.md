@@ -10,23 +10,18 @@
 
 
 ## Overview
-This project aims to classify music into different genres using Machine Learning (ML) techniques. The main idea is to extract features from audio files and use them to train various ML models. One of the most effective features for audio classification is the Mel-frequency Cepstral Coefficients (MFCCs), which represent the spectral characteristics of the audio signal.
+This notebook is use to extract features from audio files and use them to train various ML models. One of the most effective features for audio classification is the Mel-frequency Cepstral Coefficients (MFCCs), which represent the spectral characteristics of the audio signal.
 
-## MFCCs: Mel-Frequency Cepstral Coefficients
-*Mel-frequency Cepstral Coefficients* (*MFCCs*) are a compact and effective representation of the frequency spectrum of an audio signal. MFCCs are widely used in audio signal processing, particularly for tasks like speech recognition and music classification. By converting audio signals into MFCCs, we can capture the essential features that allow us to distinguish between different genres of music.
-
-### MFCCs for Two Different Audio Tracks
-
-Here, we compare the MFCCs of two different audio tracks. The MFCCs provide insights into the differences in spectral content between the tracks, which are crucial for genre classification.
-
+## Flow chart
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5175e1a8-a890-40f0-9010-8e8057b745b1" width="750"/>
+  <img src="https://github.com/user-attachments/assets/1b2828bf-eb22-48b7-a0c2-2e39338a7163" width="750"/>
 </p>
+
 
 ## Data Preprocessing
 
 ### Dataset used
-For this project, the GTZAN dataset is used, which contains 1000 audio tracks, each 30 seconds long, and divided into 10 different music genres. The dataset is widely used for music classification tasks.
+The dataset used is GTZAN. Inside the ``original_genres`` folder of the used dataset we found 1000 audio tracks in WAV format, with a duration of 30 seconds each, divided into 10 different musical genres. 
 
 More details here: [GTZAN Dataset](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification/data)
 
@@ -36,7 +31,15 @@ More details here: [GTZAN Dataset](https://www.kaggle.com/datasets/andradaoltean
   <img src="https://github.com/user-attachments/assets/aab54d0c-8bd3-43e0-a914-526f6c1a40bb" width="750"/>
 </p>
 
-Dentro de la carpeta ```genres_original``` del dataset usado encontramos 1000 pistas de audio en formato WAV, con una duración de 30 segundos cada una, divididas en 10 diferentes géneros musicales. 
+## The key features: MFCCs 
+Mel Frequency cepstral coefficients are used to extract relevant features from audio signals based on the way humans perceive frequencies. In music genre analysis, MFCCs help to identify patterns in timbre and sound texture that vary by genre.
+
+Here, we compare the MFCCs of two different audio tracks. The MFCCs provide insights into the differences in spectral content between the tracks, which are crucial for genre classification.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5175e1a8-a890-40f0-9010-8e8057b745b1" width="750"/>
+</p>
+
 
 ## Model Selection and Comparison
 Several ML models are evaluated for the task, including:
