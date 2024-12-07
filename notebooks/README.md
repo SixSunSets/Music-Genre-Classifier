@@ -5,7 +5,7 @@
 2. [Flow chart](#flow-chart)
 3. [Data Preprocessing](#data-preprocessing)
 4. [Feature Extraction](#feature-extraction)
-5. [Selection of segmentation algorithm](#selection-of-segmentation-algortihm)
+5. [Selection of segmentation algorithm](#selection-of-segmentation-algorithm)
 6. [Model Training](#model-training)
 7. [Validation and Fine-Tuning](#validation-and-fine-tuning)
 8. [Testing and Evaluation](#testing-and-evaluation)
