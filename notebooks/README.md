@@ -124,7 +124,7 @@ The following table shows the results of an initial test for Random Forest, XGBo
 It should be noted that these results correspond to an initial test using default parameters. In the next phase, hyperparameter tuning will be performed, which could significantly improve the performance of the models, especially for K-Nearest Neighbors, which is sensitive to the hyperparameter settings.
 
 ### Hyperparameter tuning
-GridSearchCV was used to perform hyperparameter fitting on each of the models. Using a dictionary, we defined a parameter space, evaluated multiple combinations and selected those that maximized model accuracy.
+``GridSearchCV`` was used to perform hyperparameter fitting on each of the models. Using a dictionary, we defined a parameter space, evaluated multiple combinations and selected those that maximized model accuracy.
 
 #### Random Forest (270 fits)
 - ``n_estimators``: number of trees in the forest (50, 100, 200).
@@ -150,22 +150,22 @@ GridSearchCV was used to perform hyperparameter fitting on each of the models. U
   <img src="https://github.com/user-attachments/assets/50b395c0-c460-4b4b-a1f6-c036f9eed255" width="500"/>
 </p>
 
-- Best hyperparameters for Random Forest: {'criterion': 'entropy', 'max_depth': 20, 'min_samples_split': 2, 'n_estimators': 200}
-- Accuracy in test set: 0.8106904231625836
+- Best hyperparameters for Random Forest: ``{'criterion': 'entropy', 'max_depth': 20, 'min_samples_split': 2, 'n_estimators': 200}``
+- Accuracy in test set: ``0.8106904231625836``
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/126c3f5e-45f0-4784-9c35-821252456700" width="500"/>
 </p>
 
-- Best hyperparameters for XGBoost: {'colsample_bytree': 0.8, 'learning_rate': 0.1, 'max_depth': 10, 'n_estimators': 200, 'subsample': 0.8}
-- Accuracy in test set: 0.7906458797327395
+- Best hyperparameters for XGBoost: ``{'colsample_bytree': 0.8, 'learning_rate': 0.1, 'max_depth': 10, 'n_estimators': 200, 'subsample': 0.8}``
+- Accuracy in test set: ``0.7906458797327395``
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/4d0092f8-923e-4699-ac50-a98c44304acb" width="500"/>
 </p>
 
-- Best hyperparameters for KNN: {'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}
-- Accuracy in test set: 0.8596881959910914
+- Best hyperparameters for KNN: ``{'metric': 'euclidean', 'n_neighbors': 3, 'weights': 'distance'}``
+- Accuracy in test set: ``0.8596881959910914``
 
 #### Conclusions
 
