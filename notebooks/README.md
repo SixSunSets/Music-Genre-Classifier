@@ -33,7 +33,7 @@ The dataset used is GTZAN. Inside the ``original_genres`` folder of the used dat
   
 More details here: [GTZAN Dataset](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification/data)
 
-Each 30-second audio track from the GTZAN dataset was segmented into 10-second intervals, tripling the dataset size. The features (MFCCs) extracted from each segment were used as input for training machine learning models. 
+Each 30-second audio track from the GTZAN dataset was segmented into 10-second intervals, tripling the dataset size. The features (MFCCs) extracted from each segment were used as input for training machine learning models [1].
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/2a005970-5b98-45ad-b443-1f8929fe47be" width="750"/>
@@ -45,7 +45,7 @@ Each 30-second audio track from the GTZAN dataset was segmented into 10-second i
 The Mel-Frequency Cepstral Coefficients (MFCCs) were computed for each audio segment. These features summarize the spectral properties of the audio and help the classifier distinguish between genres.
 
 ### The key features: MFCCs 
-Mel Frequency cepstral coefficients are used to extract relevant features from audio signals based on the way humans perceive frequencies [1]. In music genre analysis, MFCCs help to identify patterns in timbre and sound texture that vary by genre.
+Mel Frequency cepstral coefficients are used to extract relevant features from audio signals based on the way humans perceive frequencies [2]. In music genre analysis, MFCCs help to identify patterns in timbre and sound texture that vary by genre.
 
 Here, we compare the MFCCs of two different audio tracks. The MFCCs provide insights into the differences in spectral content between the tracks, which are crucial for genre classification.
 
@@ -80,7 +80,7 @@ Steps in Data Preparation:
 ---
 
 ## Model Training
-Three distinct machine learning algorithms were implemented and evaluated for the task of music genre classification: Random Forest, XGBoost, and K-Nearest Neighbors (KNN). Each model was trained on the segmented and preprocessed dataset, with a portion held out for testing.
+Three distinct machine learning algorithms were implemented and evaluated for the task of music genre classification: Random Forest, XGBoost, and K-Nearest Neighbors (KNN) [3]. Each model was trained on the segmented and preprocessed dataset, with a portion held out for testing.
 
 1. Random Forest is an ensemble learning method that builds multiple decision trees and merges their outputs to improve accuracy and control overfitting. It is effective for multi-class classification tasks like this one.
 
@@ -195,5 +195,8 @@ pip install -r requirements.txt
 ```
 ## References
 
-[1] Muda, L., Begam, M., & Elamvazuthi, I. (2010). Voice recognition algorithms using Mel Frequency Cepstral Coefficient (MFCC) and Dynamic Time Warping (DTW) techniques. Journal of Computing, 2(3), 138-143. Retrieved from https://arxiv.org/pdf/1003.4083
+[1] Chettiar, G., & Selvakumar, K. (2021). Music Genre Classification Techniques. Retrieved from https://www.researchgate.net/publication/356377974_Music_Genre_Classification_Techniques
+[2] Muda, L., Begam, M., & Elamvazuthi, I. (2010). Voice recognition algorithms using Mel Frequency Cepstral Coefficient (MFCC) and Dynamic Time Warping (DTW) techniques. Journal of Computing, 2(3), 138-143. Retrieved from https://arxiv.org/pdf/1003.4083
+[3] Islam, Md., Hasan, M., Rahim, M. A., Hasan, A., Mynuddin, M., Khandokar, I., & Islam, J. (2021). Machine Learning-Based Music Genre Classification with Pre-Processed Feature Analysis. Jurnal Ilmiah Teknik Elektro Komputer dan Informatika, 7(3), 491-502. Retrieved from https://doi.org/10.26555/jiteki.v7i3.22327
+
 
