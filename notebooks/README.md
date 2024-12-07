@@ -172,13 +172,13 @@ GridSearchCV was used to perform hyperparameter fitting on each of the models. U
 - KNN: 85.97%
 
     - It is the model with the highest accuracy, indicating that, with current features, the proximity between points in feature space is effective in correctly classifying most genres.
-    - Looking at the confusion matrix, some confusion is noted in classes such as “rock” and “reggae”.
+    - Looking at the confusion matrix, some confusion is noted in classes such as “rock” and “country”.
 
 - Random Forest: 81.07%
 
     - Although it does not surpass KNN in accuracy, it performs quite well.
     - It has a more balanced performance across classes and seems to handle classes with less homogeneity or overlap better.
-    - For example, although it does not have the highest accuracy, it handles classes such as “jazz” and “reggae” well compared to KNN.
+    - For example, although it does not have the highest accuracy, it handles classes such as “pop” and “classical” well compared to KNN.
 
 - XGBoost: 79.06%
 
