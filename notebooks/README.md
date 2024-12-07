@@ -1,4 +1,4 @@
-# Music Genre Classifier with Machine Learning
+# Feature extraction and Model Training
 
 ## Table of Contents
 1. [Overview](#overview)
