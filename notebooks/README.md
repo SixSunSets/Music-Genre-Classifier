@@ -196,7 +196,9 @@ pip install -r requirements.txt
 ## References
 
 [1] Chettiar, G., & Selvakumar, K. (2021). Music Genre Classification Techniques. Retrieved from https://www.researchgate.net/publication/356377974_Music_Genre_Classification_Techniques
+
 [2] Muda, L., Begam, M., & Elamvazuthi, I. (2010). Voice recognition algorithms using Mel Frequency Cepstral Coefficient (MFCC) and Dynamic Time Warping (DTW) techniques. Journal of Computing, 2(3), 138-143. Retrieved from https://arxiv.org/pdf/1003.4083
+
 [3] Islam, Md., Hasan, M., Rahim, M. A., Hasan, A., Mynuddin, M., Khandokar, I., & Islam, J. (2021). Machine Learning-Based Music Genre Classification with Pre-Processed Feature Analysis. Jurnal Ilmiah Teknik Elektro Komputer dan Informatika, 7(3), 491-502. Retrieved from https://doi.org/10.26555/jiteki.v7i3.22327
 
 
