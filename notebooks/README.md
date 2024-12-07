@@ -2,11 +2,15 @@
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [MFCCs: Mel-Frequency Cepstral Coefficients](#mfccs-mel-frequency-cepstral-coefficients)
+2. [Flow chart](#flow-chart)
 3. [Data Preprocessing](#data-preprocessing)
-5. [Model Selection and Comparison](#model-selection-and-comparison)
-6. [Results and Evaluation](#results-and-evaluation)
-7. [Prerequisitess](#prerequisites)
+4. [Feature Extraction](#feature-extraction)
+5. [Selection of segmentation algorithm](selection-of-segmentation-algortihm)
+6. [Model Training](#model-training)
+7. [Validation and Fine-Tuning](#validation-and-fine-tuning)
+8. [Testing and Evaluation](#testing-and-evaluation)
+9. [Prerequisites](#prerequisites)
+10. [References](#references)
 
 
 ## Overview
@@ -16,7 +20,6 @@ This notebook is use to extract features from audio files and use them to train 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1b2828bf-eb22-48b7-a0c2-2e39338a7163" width="750"/>
 </p>
-
 
 ## Data Preprocessing
 
@@ -31,7 +34,7 @@ More details here: [GTZAN Dataset](https://www.kaggle.com/datasets/andradaoltean
   <img src="https://github.com/user-attachments/assets/aab54d0c-8bd3-43e0-a914-526f6c1a40bb" width="750"/>
 </p>
 
-## The key features: MFCCs 
+### The key features: MFCCs 
 Mel Frequency cepstral coefficients are used to extract relevant features from audio signals based on the way humans perceive frequencies [1]. In music genre analysis, MFCCs help to identify patterns in timbre and sound texture that vary by genre.
 
 Here, we compare the MFCCs of two different audio tracks. The MFCCs provide insights into the differences in spectral content between the tracks, which are crucial for genre classification.
@@ -40,25 +43,6 @@ Here, we compare the MFCCs of two different audio tracks. The MFCCs provide insi
   <img src="https://github.com/user-attachments/assets/5175e1a8-a890-40f0-9010-8e8057b745b1" width="750"/>
 </p>
 
-
-## Model Selection and Comparison
-Several ML models are evaluated for the task, including:
-- **Random Forest Classifier**
-- **XGBoost Classifier**
-- **K-Nearest Neighbors (KNN)**
-
-Hyperparameter tuning is performed for each model to ensure optimal performance. The models are then evaluated using accuracy as the main evaluation metric, along with a detailed classification report.
-
-### Results
-After training and evaluating the models, the results indicate that different models perform differently depending on their characteristics.
-
-| Model            | Accuracy   |
-|------------------|------------|
-| Random Forest    | 81.07%     |
-| XGBoost          | 79.06%     |
-| K-Nearest Neighbors | 85.97%   |
-
-## Results and Evaluation
 
 ## Prerequisites
 Python packages necessary specified in requirements.txt run:
