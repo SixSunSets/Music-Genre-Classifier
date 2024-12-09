@@ -192,6 +192,9 @@ Create a virtual environment if desired, then to install the necessary Python pa
 ```console
 pip install -r requirements.txt
 ```
+
+---
+
 ## References
 
 [1] Chettiar, G., & Selvakumar, K. (2021). Music Genre Classification Techniques. Retrieved from https://www.researchgate.net/publication/356377974_Music_Genre_Classification_Techniques
