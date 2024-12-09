@@ -8,9 +8,8 @@
 5. [Selection of segmentation algorithm](#selection-of-segmentation-algorithm)
 6. [Model Training](#model-training)
 7. [Validation and Fine-Tuning](#validation-and-fine-tuning)
-8. [Testing and Evaluation](#testing-and-evaluation)
-9. [Prerequisites](#prerequisites)
-10. [References](#references)
+8. [Prerequisites](#prerequisites)
+9. [References](#references)
 
 
 ## Overview
