@@ -32,7 +32,7 @@ The dataset used is GTZAN. Inside the ``original_genres`` folder of the used dat
   
 More details here: [GTZAN Dataset](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification/data)
 
-Each 30-second audio track from the GTZAN dataset was segmented into 10-second intervals, tripling the dataset size. The features (MFCCs) extracted from each segment were used as input for training machine learning models [1].
+Each 30-second audio track from the GTZAN dataset was segmented into 10-second intervals, tripling the dataset size. The features (MFCCs) extracted from each segment were used as input for training machine learning models [1].  It is also an option, segmenting the audios into tracks of 3 seconds each, we are interested to know if it affects the classification decisions made by the model.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/2a005970-5b98-45ad-b443-1f8929fe47be" width="750"/>
