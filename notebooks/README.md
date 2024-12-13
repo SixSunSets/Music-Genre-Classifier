@@ -201,5 +201,5 @@ pip install -r requirements.txt
 
 [2] Muda, L., Begam, M., & Elamvazuthi, I. (2010). Voice recognition algorithms using Mel Frequency Cepstral Coefficient (MFCC) and Dynamic Time Warping (DTW) techniques. Retrieved from https://arxiv.org/pdf/1003.4083
 
-[3] Islam, Md., Hasan, M., Rahim, M. A., Hasan, A., Mynuddin, M., Khandokar, I., & Islam, J. (2021). Machine Learning-Based Music Genre Classification with Pre-Processed Feature Analysis. Retrieved from https://www.researchgate.net/publication/357912712_Machine_Learning-Based_Music_Genre_Classification_with_Pre-_Processed_Feature_Analysis
+[3] Islam, Md., Hasan, M., Rahim, M. A., Hasan, A., Mynuddin, M., Khandokar, I., & Islam, J. (2021). Machine Learning-Based Music Genre Classification with Pre-Processed Feature Analysis. Retrieved from https://www.researchgate.net/publication/357912712_Machine_Learning-Based_Music_Genre_Classification_with_Pre-_Processed_Feature_Analysis 
 
