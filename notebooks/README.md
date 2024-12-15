@@ -13,7 +13,7 @@
  
 
 ## Overview
-This Jupyter notebook is use to extract features from audio files and use them to train various ML models. One of the most effective features for audio classification is the Mel-frequency Cepstral Coefficients (MFCCs), which represent the spectral characteristics of the audio signal. The next intention is to test the model with new audio tracks, and then prepare a simple user interface to upload a track of your own.
+This Jupyter Notebook is use to extract features from audio files and use them to train various ML models. One of the most effective features for audio classification is the Mel-frequency Cepstral Coefficients (MFCCs), which represent the spectral characteristics of the audio signal. The next intention is to test the model with new audio tracks, and then prepare a simple user interface to upload a track of your own.
 
 
 ## Flow chart
